@@ -1,0 +1,128 @@
+.stats {
+   height: 100%;
+
+   .header-small {
+      padding-bottom: 0.625rem;
+   }
+
+   .small-body {
+      max-width: 17.5rem;
+   }
+}
+
+.header__product {
+   margin-top: 4.8125rem;
+   display: flex;
+   flex-direction: column;
+
+   &-row {
+      display: flex;
+      justify-content: space-between;
+      overflow: visible;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 46%;
+      transform: translateX(50%);
+      width: 667px;
+      height: 199px;
+      background-image: url(/Images/objects/stats-drone.png);
+      background-size: 100% 100%;
+      z-index: 0;
+   }
+
+   &-item {
+      position: relative;
+      overflow: visible;
+   }
+}
+
+
+// Stats Items Pointing arrows
+.header__product-row:nth-child(1) {
+
+   .header__product-item:nth-child(1) {
+   
+      margin-bottom: 140px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(/Images/objects/stats-line--1.png);
+         background-size: 100% 100%;
+         background-position: center;
+         width: 229px;
+         height: 114px;
+         right: -125px;
+         top: 13px;
+      }
+   }
+}
+
+.header__product-row:nth-child(1) {
+
+   .header__product-item:nth-child(2) {
+      margin-bottom: 140px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(/Images/objects/stats-line--2.png);
+         background-size: 100% 100%;
+         background-position: center;
+         width: 253px;
+         height: 102.67px;
+         left: -266px;
+         top: 13px;
+      }
+   }
+}
+
+.header__product-row:nth-child(2) {
+
+   .header__product-item:nth-child(1) {
+      margin-bottom: 140px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(/Images/objects/stats-line--3.png);
+         background-size: 100% 100%;
+         background-position: center;
+         width: 346px;
+         height: 80.97px;
+         left: 215px;
+         top: -65px;
+         z-index: 10;
+      }
+   }
+}
+
+.header__product-row:nth-child(2) {
+
+   .header__product-item:nth-child(2) {
+      margin-bottom: 140px;
+      z-index: 10;
+
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(/Images/objects/stats-line--4.png);
+         background-size: 100% 100%;
+         background-position: center;
+         width: 123.5px;
+         height: 89px;
+         top: -75px;
+         left: -132px;
+      }
+   }
+}
+
+
+
+.header__product-item:nth-child(even) {
+   transform: translateY(-3.6px);
+}

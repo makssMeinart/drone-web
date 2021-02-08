@@ -1,0 +1,72 @@
+.questions__tab-wrapper {
+   display: flex;
+   flex-direction: column;
+   max-width: 690px;
+   row-gap: 5px;
+   margin-top: 30px;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      right: -391px;
+      bottom: 30px;
+      width: 319px;
+      height: 125px;
+      background-image: url(/Images/objects/question-drone.png);
+   }
+}
+
+.question__tab {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.3);
+   opacity: 0.95;
+
+   &-content {
+      display: flex;
+      align-items: center;
+      padding: 20px 20px 24px 39px;
+      position: relative;
+
+      .header-small {
+         font-weight: 500;
+         line-height: 1;
+      }
+
+      .primary-btn {
+         position: absolute;
+         cursor: pointer;
+         width: 72px;
+         height: 100%;
+         right: -72px;
+         top: 0;
+      }
+   }
+}
+
+.question__tab-dropdown {
+   padding: 0 5px 75px 50px;
+
+   .header-small {
+      margin-bottom: 20px;
+   }
+}
+
+// Active Drop Down
+.question__tab.active {
+   img {
+      transform: rotate(180deg);
+   }
+}
+
+.question__tab.active {
+   .question__tab-dropdown {
+      display: block;
+   }
+}
+
+.question__tab-dropdown {
+   display: none;
+}

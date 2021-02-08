@@ -1,0 +1,124 @@
+.contacts__items {
+   margin: 0 auto;
+   display: flex;
+   margin-top: 3.5rem;
+
+}
+
+// Contacts places
+.contacts__items-places {
+   margin-right: 3.75rem;
+   margin-left: 30px;
+
+   .header-small {
+      line-height: 1.5rem;
+      padding-bottom: 0.625rem;
+   }
+
+   &-num,
+   &-email {
+      font-weight: 300;
+      font-size: 0.9375rem;
+      line-height: 1.1875rem;
+      color: $white-color;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &-num {
+      padding-bottom: 0.3125rem;
+   }
+
+}
+
+.contacts__items-places-item:not(:last-child) {
+   margin-bottom: 1.875rem;
+}
+
+// Contacts Form
+.contacts__items-form {
+   max-width: 570px;
+   margin-right: 6.625rem;
+
+   .header-small {
+      margin-bottom: 0.625rem;
+   }
+
+   .contacts__items-form-subtitle {
+      font-weight: 300;
+      font-size: 0.9375rem;
+      line-height: 1.2188rem;
+      margin-bottom: 0.625rem;
+   }
+
+   // Form
+   .contacts__items-form-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10px;
+      padding-bottom: 20px;
+   }
+
+   .contacts__item-input {
+      box-sizing: border-box;
+      width: 49%;
+      padding: 15px 15px 14px 15px;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0.95;
+      border: none;
+      color: $white-color;
+
+      &::placeholder {
+         font-size: 13px;
+         font-weight: 400;
+      }
+   }
+
+   .contacts__items-form-textarea {
+      width: 100%;
+      padding: 15px 15px 112px 15px;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0.95;
+      border: none;
+      resize: none;
+      color: $white-color;
+
+      &::placeholder {
+         font-size: 0.8125rem;
+         line-height: 1.0625rem;
+         font-weight: 400;
+      }
+   }
+
+   .send-btn {
+      background: none;
+      border: 1px solid $white-color;
+      border-radius: 2px;
+      padding: 0.5625rem 0.9375rem;
+      text-transform: uppercase;
+      color: $white-color;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 3%;
+      transition: .3s ease color;
+      transition: .3s ease background-color;
+      cursor: pointer;
+
+      &:hover {
+         color: $black-color;
+         background-color: $white-color;
+      }
+   }
+}
+
+// Contacts Social
+.contacts__social {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 28px;
+}
+

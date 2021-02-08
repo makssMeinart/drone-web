@@ -1,0 +1,74 @@
+
+
+.about {
+   .container {
+      max-width: 1154px;
+   }
+}
+
+.about-slider {
+   height: 100%;
+
+   .slick-list {
+      height: inherit;
+
+      .slick-track {
+         height: inherit;
+      }
+   }
+}
+
+.about-slider__item-wrapper {
+   display: flex;
+   column-gap: 137px;
+   height: inherit;
+   overflow-x: hidden;
+}
+
+.about-slider__info {
+   .header {
+      margin-bottom: 72px;
+   }
+
+   .large-body:not(:last-child) {
+      margin-bottom: 35px;
+   }
+}
+
+
+.about-slider__btns {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: flex-end;
+   padding-right: 17px;
+
+   &-img {
+      width: 560px;
+      height: 300px;
+      position: relative;
+      z-index: 5;
+
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         border: 0.25rem solid $white-color;
+         left: 0.8044rem;
+         top: -0.9375rem;
+         z-index: -1;
+      }
+
+      &::before {
+         content: "Лучшая беспилотная технология аэросъемки";
+         position: absolute;
+         left: -15.5625rem;
+         bottom: 1.8125rem;
+         max-width: 17.5625rem;
+         text-align: right;
+         font-size: 1.5rem;
+         line-height: 1.7237rem;
+      }
+   }
+}

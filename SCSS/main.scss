@@ -1,0 +1,145 @@
+@import "../AddOns/functions", "../AddOns/mixins", "../AddOns/variables", "../AddOns/fonts";
+// Text block
+@import "../SCSS/blocks/textblock";
+// section Blocks
+@import "../SCSS/blocks/section-blocks";
+// Header 
+@import "../SCSS/blocks/header";
+
+
+
+// Sections
+@import "../SCSS/blocks/sections/landing";
+@import "../SCSS/blocks/sections/about";
+@import "../SCSS/blocks/sections/benefits";
+@import "../SCSS/blocks/sections/stats";
+@import "../SCSS/blocks/sections/questions";
+@import "../SCSS/blocks/sections/contacts";
+
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   min-height: 100%;
+   font-size: 16px;
+   scroll-behavior: smooth;
+}
+
+// font-family: SFProDisplay;
+
+body {
+   min-height: 100%;
+   font-weight: 500;
+   color: $white-color;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+   max-width: 1200px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.primary-btn {
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 700;
+   font-size: 0.875rem;
+   line-height: 1.0056rem;
+   letter-spacing: 3%;
+   text-transform: uppercase;
+   color: $white-color;
+   padding: 9px 15px;
+   border: 1px solid $white-color;
+   text-decoration: none;
+   transition: $ease-bg;
+
+   &:hover {
+      background-color: $white-color;
+      color: $black-color;
+   }
+}
+
+.burger-menu {
+   display: none;
+   position: relative;
+   width: 24px;
+   height: 14px;
+   cursor: pointer;
+
+   span {
+      position: absolute;
+      width: 100%;
+      background-color: $white-color;
+      height: 2px;
+   }
+
+   &::after,
+   &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $white-color;
+   }
+
+   &::after {
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   &::before {
+      bottom: 0;
+      right: 0;
+      width: 16px;
+   }
+}
+
+// Slider Arrows 
+
+.slider-prev,
+.slider-next {
+   height: 48px;
+   width: 60px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+}
+
+.slider-prev {
+   background-color: $white-color;
+
+   svg {
+      stroke: $black-color;
+   }
+}
+
+.slider-next {
+   background-color: $white-color;
+
+   svg {
+      stroke: $black-color;
+   }
+}
+
+.slider-prev.slick-disabled {
+   background: #1C1C1C;
+
+   svg {
+      stroke: $white-color;
+   }
+}
+.slider-next.slick-disabled {
+   background: #1C1C1C;
+
+   svg {
+      stroke: $white-color;
+   }
+}
+
+@import "../Mobile/mobile";

@@ -1,0 +1,28 @@
+.large-body {
+   font-size: 1.0625rem;
+   font-weight: 300;
+   line-height: 1.5938rem;
+   color: $white-color;
+}
+
+.small-body {
+   font-size: 0.9375rem;
+   color: $white-color;
+   line-height: 1.2188rem;
+   font-weight: 300;
+}
+
+.header {
+   padding-top: 9.375rem;
+   font-weight: 400;
+   font-size: 2.75rem;
+   line-height: 3.25rem;
+   font-family: SFProDisplay;
+   color: $white-color;
+}
+
+.header-small {
+   font-weight: 700;
+   font-size: 1.3125rem;
+   line-height: 1.7344rem;
+}
